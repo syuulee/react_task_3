@@ -1,0 +1,45 @@
+* {
+  outline: 1px solid --slategrey;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.Header {
+  background: #7d2426;
+  color: #f1f1f1;
+  height: 120px;
+}
+
+.Header .top {
+  display: flex;
+  line-height: 40px;
+  justify-content: right;
+  gap: 10px;
+}
+
+.Header .top>li {
+  font-size: 13px;
+}
+
+.Header .bottom {
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+}
+
+.Header .bottom .logo {
+  width: 180px;
+}
+
+.Header .bottom .gnb {
+  display: flex;
+  gap: 30px;
+}
+
+.Header .bottom .gnb>li {
+  font-size: 17px;
+  font-weight: 500;
+}
