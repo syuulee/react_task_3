@@ -10,12 +10,12 @@
 .Header {
   background: #7d2426;
   color: #f1f1f1;
-  height: 120px;
+  height: 130px;
 }
 
 .Header .top {
   display: flex;
-  line-height: 40px;
+  line-height: 50px;
   justify-content: right;
   gap: 10px;
 }
@@ -27,7 +27,7 @@
 .Header .bottom {
   display: flex;
   justify-content: space-between;
-  line-height: 60px;
+  line-height: 70px;
 }
 
 .Header .bottom .logo {
@@ -36,10 +36,147 @@
 
 .Header .bottom .gnb {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .Header .bottom .gnb>li {
   font-size: 17px;
   font-weight: 500;
+}
+
+.main_visual {
+  position: relative;
+}
+
+.main_visual .inner {
+  width: 1500px;
+  margin: 20px auto;
+}
+
+.main_visual figure {
+  height: 800px;
+}
+
+.main_visual .itm01 {
+  background: url(../public/images/mainvisual_04.jpg) no-repeat center;
+}
+
+.main_visual .itm02 {
+  background: url(../public/images/mainvisual_06.jpg) no-repeat center;
+}
+
+.main_visual .itm03 {
+  background: url(../public/images/mainvisual_05.jpg) no-repeat center;
+}
+
+.current {
+  padding: 100px 0 50px 0;
+}
+
+.current .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.current .container .left {
+  position: relative;
+  flex: 1;
+  border: 1px solid #7d2426;
+  border-radius: 500px 500px;
+}
+
+.current .container .des {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+}
+
+.current .container .des h2 {
+  font-size: 31px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.current .container .des>p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 30px 0;
+}
+
+.current .container .des .date {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0 0 5px 0;
+}
+
+.current .container .des .locate {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.current .container .des>a {
+  text-align: center;
+}
+
+.current .container .right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 2;
+  gap: 10px;
+}
+
+.current .right img {
+  height: 500px;
+}
+
+.Footer {
+  border-top: 1px solid #7d2426;
+  padding: 0 0 100px 0;
+  font-size: 15px;
+}
+
+.Footer .top .relation {
+  display: flex;
+  line-height: 100px;
+  justify-content: space-between;
+}
+
+.Footer .top .relation .s_tit {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Footer .top .sponsorship {
+  display: flex;
+  gap: 10px;
+}
+
+.Footer .bottom {
+  text-align: center;
+  line-height: 1.2;
+  margin: 0 0 30px 0
+}
+
+.Footer .bottom .number {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.Footer .not {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Footer .not>span {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
 }
