@@ -4,7 +4,7 @@ const Sub01 = () => {
     return (
         <section className='about'>
             <div className="container">
-                <h2>about</h2>
+                <h2>발레단소개</h2>
                 <strong>국립발레단 소개</strong>
             </div>
             <div className="container">
@@ -64,8 +64,7 @@ const Sub01 = () => {
                         </div>
                     </div>
                 </div>
-
-                <p>국립발레단은 국내 발레의 대중화라는 큰 의무를 위해 공연뿐만 아니라
+                <p className='last'>국립발레단은 국내 발레의 대중화라는 큰 의무를 위해 공연뿐만 아니라
                     전국 방방곡곡으로 ‘찾아가는 지역공연’, ‘찾아가는 발레교실’,
                     '꿈나무 발레교실' 등 크고 작은 프로그램들을 진행하며
                     다양한 공익사업을 펼치고 있다.
