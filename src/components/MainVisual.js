@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick.css";
 
 const SLIDE = [
     {
-        id: 1, content: "국민들의 행복의 가치가 올라갈 수 있는 길이 무엇인가를 찾기 위하여 끊임없이 노력하는", title: "국립발레단"
+        id: 1, content: "", title: "지젤"
     },
     {
-        id: 2, content: "국민들의 행복의 가치가 올라갈 수 있는 길이 무엇인가를 찾기 위하여 끊임없이 노력하는", title: "국립발레단"
+        id: 2, content: "", title: "호두까기 인형"
     },
     {
-        id: 3, content: "국민들의 행복의 가치가 올라갈 수 있는 길이 무엇인가를 찾기 위하여 끊임없이 노력하는", title: "국립발레단"
+        id: 3, content: "", title: "허난설헌-수월경화"
     },
 ]
 const MainVisual = () => {
@@ -25,8 +25,10 @@ const MainVisual = () => {
         // dots: true,
         afterChange: index => setIDX(index),
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         fade: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     }
     return (
         <section className='main_visual'>
@@ -36,15 +38,24 @@ const MainVisual = () => {
                         SLIDE.map((slide, idx) => {
                             return (
                                 <figure key={slide.id} className={'itm0' + slide.id + (idx === IDX ? ' on' : '')}>
-                                    <div className="inner">
-                                        <div className="des">{slide.desc}</div>
-                                        <p className="tit">{slide.content}</p>
-                                    </div>
+                                    {/* <div className="container">
+                                        <div className="des">{slide.content}</div>
+                                        <p className="tit">{slide.title}</p>
+                                    </div> */}
                                 </figure>
                             )
                         })
                     }
                 </Slider>
+                {/* <ul className="slideTab">
+                    {
+                        SLIDE.map((dots, idx) => {
+                            return (
+                                <li key={dots.id} className={idx === IDX ? ' on' : ''} onClick={() => mainSlide.current.slickGoTo(idx)}>{dots.title}</li>
+                            )
+                        })
+                    }
+                </ul> */}
             </div>
         </section>
     )

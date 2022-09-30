@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid slategrey;
+  outline: 1px solid --slategrey;
 }
 
 .container {
@@ -60,6 +60,26 @@
   margin: 20px auto;
 }
 
+.main_visual .container {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main_visual .container .des {
+  font-size: 19px;
+  font-weight: 300;
+  margin: 0 0 5px 0;
+  color: #fff;
+}
+
+.main_visual .container .tit {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+}
+
 .main_visual figure {
   height: 800px;
 }
@@ -75,6 +95,39 @@
 .main_visual .itm03 {
   background: url(../public/images/mainvisual_05.jpg) no-repeat center;
 }
+
+/* .main_visual .slideTab {
+  position: absolute;
+  top: 20%;
+  left: 360px;
+  display: flex;
+  gap: 10px;
+}
+
+.main_visual .slideTab li {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.main_visual .slideTab li.on {
+  font-size: 15px;
+}
+
+.main_visual .slideTab li::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background: #fff;
+  margin: -25px 0 0 0;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+
+.main_visual .slideTab li.on::after {
+  background: #7d2426;
+} */
 
 .current {
   padding: 100px 0 50px 0;
@@ -204,7 +257,34 @@
 
 /* footer */
 
-/* sub02 */
+/* sub01 */
+.program {
+  padding: 100px 0;
+}
+
+.program h2 {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.program .intro strong {
+  display: block;
+  font-size: 27px;
+  font-weight: 600;
+  margin: 0 0 50px 0;
+}
+
+.program .intro strong::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  margin: 10px 0 0 0;
+  background: #7d2426;
+}
+
+/* sub03 */
 .people {
   padding: 100px 0;
 }
@@ -231,10 +311,20 @@
   background: #7d2426;
 }
 
+.people .cap {
+  position: relative;
+}
+
 .people .represent {
   display: flex;
   justify-content: space-evenly;
   margin: 0 0 100px 0;
+}
+
+.people .sub_represent {
+  position: absolute;
+  top: 500px;
+  right: 0;
 }
 
 .people .direct figure {
@@ -468,7 +558,7 @@
 }
 
 .donation .hf_line {
-  background: linear-gradient(to top, #FFBB00 50%, transparent 50%);
+  background: linear-gradient(to top, #ddd 50%, transparent 50%);
 }
 
 /* sub05 */
@@ -578,6 +668,81 @@
   vertical-align: middle;
 }
 
+/* sub05 */
+.people {
+  padding: 100px 0;
+}
+
+.people .cap {
+  display: flex;
+  gap: 100px;
+  text-align: center;
+}
+
+.people .cap figure {
+  width: 550px;
+  border-radius: 300px 300px;
+  margin: 0 0 30px 0;
+  overflow: hidden;
+}
+
+.people .represent {
+  display: flex;
+  flex-direction: column;
+}
+
+.people .represent .name {
+  font-size: 29px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.people .sub_represent .part {
+  font-size: 17px;
+}
+
+.people .sub_represent {
+  display: flex;
+  flex-direction: column;
+  height: 832px;
+}
+
+.people .sub_represent .name {
+  font-size: 29px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.people .represent .part {
+  font-size: 17px;
+}
+
+.people .staff {
+  padding: 600px 0 0 0;
+}
+
+.people .staff_all {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+.people .staff_all figure {
+  border-radius: 200px;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+}
+
+.people .staff_all .name {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.people .staff_all .part {
+  font-size: 17px;
+}
+
 /* notice */
 .notice {
   padding: 100px 0;
@@ -603,4 +768,49 @@
   height: 1px;
   margin: 10px 0 0 0;
   background: #7d2426;
+}
+
+.notice .search_box {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.notice .search_box input[type="text"] {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #7d2426;
+  padding: 5px;
+  width: 1100px;
+}
+
+.notice .search_box input::placeholder {
+  text-indent: 0.5em;
+}
+
+.notice .search_box button {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  color: #7d2426;
+  margin: 0 0 0 10px;
+}
+
+.notice ul>li {
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #7d2426;
+}
+
+.notice ul>li p {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.notice ul>li .date {
+  display: block;
+  font-size: 15px;
+  margin: 0 0 10px 0;
 }

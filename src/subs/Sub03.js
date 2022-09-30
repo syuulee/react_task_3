@@ -40,8 +40,10 @@ const Sub02 = () => {
     return (
         <section className='program'>
             <div className="container">
-                <h2>about</h2>
-                <strong>국립발레단 소개</strong>
+                <div className="intro">
+                    <h2>about</h2>
+                    <strong>국립발레단 소개</strong>
+                </div>
                 <div className="tab">
                     <ul className="tab_menu">
                         <li>2022</li>
