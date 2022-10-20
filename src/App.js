@@ -11,28 +11,26 @@ import Notice from './subs/Notice';
 import Footer from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
 
-
-
 function App() {
-  return (
-    <>
-      <Wrapper>
-        <Header />
-        {/* <MainVisual />
+    return (
+        <>
+            <Wrapper>
+                <Header />
+                {/* <MainVisual />
         <Section01 /> */}
-        <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='/Sub01' element={<Sub01 />} />
-          <Route path='/Sub02' element={<Sub02 />} />
-          <Route path='/Sub03' element={<Sub03 />} />
-          <Route path='/Sub04' element={<Sub04 />} />
-          <Route path='/Sub05' element={<Sub05 />} />
-          <Route path='/Notice' element={<Notice />} />
-        </Routes>
-        <Footer />
-      </Wrapper>
-    </>
-  );
+                <Routes>
+                    <Route path='/' element={<Main />} />
+                    <Route path='/Sub01' element={<Sub01 />} />
+                    <Route path='/Sub02' element={<Sub02 />} />
+                    <Route path='/Sub03/*' element={<Sub03 />} />
+                    <Route path='/Sub04' element={<Sub04 />} />
+                    <Route path='/Sub05' element={<Sub05 />} />
+                    <Route path='/Notice' element={<Notice />} />
+                </Routes>
+                <Footer />
+            </Wrapper>
+        </>
+    );
 }
 
 export default App;

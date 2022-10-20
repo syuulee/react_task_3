@@ -1,43 +1,46 @@
 import React, { useState } from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
 import Content01 from '../pages/Content01';
 import Content02 from '../pages/Content02';
 import Content03 from '../pages/Content03';
 
+const link = ['2022', '2021', '2020'];
+
 const Sub02 = () => {
-    const link = [
-        '2022', '2021', '2020'
-    ];
     const [alink, setAlink] = useState(0);
     return (
         <section className='program'>
-            <div className="container">
-                <div className="intro">
+            <div className='container'>
+                <div className='intro'>
                     <h2>about</h2>
                     <strong>국립발레단 소개</strong>
                 </div>
-                <div className="tab">
-                    <ul className="tab_menu">
-                        {
-                            link.map((it, idx) => {
-                                return <li onClick={() =>
-                                    setAlink(idx)} key={idx}>{it}</li>
-                            })
-                        }
+                <div className='tab'>
+                    <ul className='tab_menu'>
+                        <li>
+                            <Link to='/sub03/2022'>2022</Link>
+                        </li>
+                        <li>
+                            <Link to='/sub03/2021'>2021</Link>
+                        </li>
+                        <li>
+                            <Link to='/sub03/2020'>2020</Link>
+                        </li>
                     </ul>
-                </div>
-                <div className="tab_content">
-                    <Content01 />
-                    <Content02 />
-                    <Content03 />
+                    <div className='tab_content'>
+                        <Routes>
+                            <Route path='/2022' element={<Content01 />} />
+                            <Route path='/2021' element={<Content02 />} />
+                            <Route path='/2020' element={<Content03 />} />
+                        </Routes>
+                    </div>
                 </div>
             </div>
-        </section >
-    )
-}
+        </section>
+    );
+};
 
 export default Sub02;
-
-
 
 //const TAB = [
 //     {

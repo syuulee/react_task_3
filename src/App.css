@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid --slategrey;
+  outline: 1px solid slategrey;
 }
 
 .container {
@@ -282,6 +282,26 @@
   height: 1px;
   margin: 10px 0 0 0;
   background: #7d2426;
+}
+
+.program .tab {
+  display: flex;
+}
+
+.program .tab_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.program .tab_menu li {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.program .tab_content {
+  flex: 2;
 }
 
 /* sub03 */
