@@ -10,7 +10,7 @@ const Header = () => {
                 <div className="menu">
                     <h1>
                         <Link to="/">
-                            <img src={process.env.PUBLIC_URL + '/images/logo_ren.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="" />
                         </Link>
                     </h1>
                     <nav>
@@ -27,7 +27,6 @@ const Header = () => {
                         </ul>
                     </div>
                 </div>
-
             </div>
         </header>
     )

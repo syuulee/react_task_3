@@ -1,5 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
+
+const notice = [
+    { id: 1, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+    { id: 2, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+    { id: 3, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+    { id: 4, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+    { id: 5, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+    { id: 6, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+    { id: 7, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+    { id: 8, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+    { id: 9, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+    { id: 10, title: "[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내", date: '2022.09.29.', link: "/" },
+]
 const Notice = () => {
     return (
         <section className='notice'>
@@ -21,34 +35,16 @@ const Notice = () => {
                     </form>
                 </div>
                 <ul>
-                    <li>
-                        <p>[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내</p>
-                        <span className="date">2022.09.29.</span>
-                    </li>
-                    <li>
-                        <p>[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내</p>
-                        <span className="date">2022.09.29.</span>
-                    </li>
-                    <li>
-                        <p>[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내</p>
-                        <span className="date">2022.09.29.</span>
-                    </li>
-                    <li>
-                        <p>[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내</p>
-                        <span className="date">2022.09.29.</span>
-                    </li>
-                    <li>
-                        <p>[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내</p>
-                        <span className="date">2022.09.29.</span>
-                    </li>
-                    <li>
-                        <p>[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내</p>
-                        <span className="date">2022.09.29.</span>
-                    </li>
-                    <li>
-                        <p>[공지] 국립발레단 대구 '백조의 호수' 캐스팅 변경 안내</p>
-                        <span className="date">2022.09.29.</span>
-                    </li>
+                    {notice.map(it => {
+                        return (
+                            <li>
+                                <Link to={it.link}>
+                                    <p>{it.title}</p>
+                                    <span className='date'>{it.date}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
                 </ul>
             </div>
         </section>

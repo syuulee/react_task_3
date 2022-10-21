@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../App.css'
 
 const Data2022 = [
     {
@@ -6,21 +8,21 @@ const Data2022 = [
         title: '호두까기 인형',
         date: '2022.12.17 - 12.25',
         place: '예술의 전당 오페라극장',
-        src: process.env.PUBLIC_URL + '/images/program07.png',
+        src: process.env.PUBLIC_URL + '/images/program10.png',
     },
     {
         id: 2,
         title: '트리플 빌',
         date: '2022.11.18 - 11.20',
         place: '예술의 전당 오페라극장',
-        src: process.env.PUBLIC_URL + '/images/program06.png',
+        src: process.env.PUBLIC_URL + '/images/program09.png',
     },
     {
         id: 3,
         title: '지젤',
         date: '2022.11.11 - 11.13',
         place: '예술의 전당 오페라극장',
-        src: process.env.PUBLIC_URL + '/images/program07.png',
+        src: process.env.PUBLIC_URL + '/images/program08.png',
     },
     {
         id: 4,
@@ -34,47 +36,66 @@ const Data2022 = [
         title: 'KNB Movement Series 7',
         date: '2022.07.16 - 07.17',
         place: '예술의전당 CJ 토월극장',
-        src: process.env.PUBLIC_URL + '/images/program07.png',
+        src: process.env.PUBLIC_URL + '/images/program06.png',
     },
     {
         id: 6,
         title: '허난설헌-수월경화(水月鏡花)',
         date: '2022.06.28 - 06.29',
         place: '예술의전당 CJ 토월극장',
-        src: process.env.PUBLIC_URL + '/images/program07.png',
+        src: process.env.PUBLIC_URL + '/images/program05.png',
     },
     {
         id: 7,
         title: '고집쟁이 딸',
         date: '2022.06.08 - 06.11',
         place: '국립극장 해오름',
-        src: process.env.PUBLIC_URL + '/images/program07.png',
+        src: process.env.PUBLIC_URL + '/images/program04.png',
     },
     {
         id: 8,
         title: '해적',
         date: '2022.04.20 - 04.24',
         place: '예술의전당 오페라극장',
-        src: process.env.PUBLIC_URL + '/images/program07.png',
+        src: process.env.PUBLIC_URL + '/images/program03.png',
     },
     {
         id: 9,
         title: '주얼스',
         date: '2022.02.25 - 02.27',
         place: '국립극장 해오름',
-        src: process.env.PUBLIC_URL + '/images/program07.png',
+        src: process.env.PUBLIC_URL + '/images/program02.png',
     },
     {
         id: 1,
         title: 'History of KNB Movement Series 2',
         date: '2022.05.21 - 05.22',
         place: '국립정동극장',
-        src: process.env.PUBLIC_URL + '/images/program07.png',
+        src: process.env.PUBLIC_URL + '/images/program01.png',
     },
 ];
 
 const Content01 = () => {
-    return <div></div>;
+    return (
+        <div className='performance'>
+            {
+                Data2022.map(it => {
+                    return (
+                        <div className='content_box'>
+                            <Link to='/'>
+                                <figure>
+                                    <img src={it.src} alt="" />
+                                </figure>
+                                <strong className='title'>{it.title}</strong>
+                                <p className='date'>{it.date}</p>
+                                <span className='place'>{it.place}</span>
+                            </Link>
+                        </div>
+                    )
+                })
+            }
+        </div>
+    );
 };
 
 export default Content01;

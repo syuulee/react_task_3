@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid slategrey;
+  outline: 1px solid --slategrey;
 }
 
 .container {
@@ -19,7 +19,8 @@
 } */
 
 .Header {
-  border-bottom: 1px solid rgba(235, 64, 52, 0.1);
+  background: #7d2426;
+  /* border-bottom: 1px solid rgba(235, 64, 52, 0.1); */
 }
 
 .Header img {
@@ -27,6 +28,7 @@
 }
 
 .Header .menu {
+  color: #fff;
   display: flex;
   line-height: 100px;
   justify-content: space-between;
@@ -257,7 +259,7 @@
 
 /* footer */
 
-/* sub01 */
+/* sub03 */
 .program {
   padding: 100px 0;
 }
@@ -304,7 +306,37 @@
   flex: 2;
 }
 
-/* sub03 */
+/* sub03 - content01 */
+.performance {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.performance figure {
+  margin: 0 0 10px 0;
+  width: 350px;
+}
+
+.performance .title {
+  display: inline-block;
+  margin: 0 0 7px 0;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.performance .date {
+  font-size: 15px;
+}
+
+.performance .place {
+  display: inline-block;
+  font-size: 15px;
+  color: #777;
+}
+
+/* sub02 */
 .people {
   padding: 100px 0;
 }
@@ -792,7 +824,7 @@
 
 .notice .search_box {
   text-align: center;
-  margin: 0 0 50px 0;
+  margin: 0 0 80px 0;
 }
 
 .notice .search_box input[type="text"] {
