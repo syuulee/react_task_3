@@ -98,6 +98,30 @@
   background: url(../public/images/mainvisual_05.jpg) no-repeat center;
 }
 
+.main_visual .slideArrows button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #ddd;
+  font-size: 30px;
+}
+
+.main_visual .slideArrows button:hover {
+  color: #7d2426;
+}
+
+.main_visual .slideArrows button:first-child {
+  margin: 0 0 0 -800px;
+}
+
+.main_visual .slideArrows button:last-child {
+  margin: 0 0 0 800px;
+}
+
 /* .main_visual .slideTab {
   position: absolute;
   top: 20%;
@@ -593,7 +617,7 @@
 .donation .dokind .detail .box {
   display: inline-block;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0 0 20px 0;
   padding: 5px 15px;
   border: 1px solid #007b80;

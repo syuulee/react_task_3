@@ -47,15 +47,10 @@ const MainVisual = () => {
                         })
                     }
                 </Slider>
-                {/* <ul className="slideTab">
-                    {
-                        SLIDE.map((dots, idx) => {
-                            return (
-                                <li key={dots.id} className={idx === IDX ? ' on' : ''} onClick={() => mainSlide.current.slickGoTo(idx)}>{dots.title}</li>
-                            )
-                        })
-                    }
-                </ul> */}
+            </div>
+            <div className='slideArrows'>
+                <button onClick={() => mainSlide.current.slickPrev()}><i className="xi-angle-left"></i></button>
+                <button onClick={() => mainSlide.current.slickNext()}><i className="xi-angle-right"></i></button>
             </div>
         </section>
     )

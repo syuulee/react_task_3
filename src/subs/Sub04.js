@@ -1,5 +1,16 @@
 import React from 'react'
 
+
+const PriceContent = [
+    { id: 1, title: "2,000,000원", part1: "2022 정기공연", part1Content: "해적, 고집쟁이 딸, 백조의 호수, 지젤, 트리플 빌", part2: "창단 60주년 기념공연", part2Content: "주얼스", part3: "공연활성화사업", part3Content: "허난설헌-수월경화, KNB Movement Series 7", part4: "공연 티켓 구매시 30%할인 일괄 적용", special: "각 공연당 S석 티켓 2매 제공", special2: "각 공연당 S석 티켓 2매 제공", limit: "1공연당 2매 제한" },
+
+    { id: 2, title: "3,000,000원", part1: "2022 정기공연", part1Content: "해적, 고집쟁이 딸, 백조의 호수, 지젤, 트리플 빌", part2: "창단 60주년 기념공연", part2Content: "주얼스", part3: "공연활성화사업", part3Content: "허난설헌-수월경화, KNB Movement Series 7", part4: "공연 티켓 구매시 30%할인 일괄 적용", special: "각 공연당 R석 티켓 2매 제공", special2: "각 공연당 R석 티켓 2매 제공", limit: "1공연당 4매 제한" },
+
+    { id: 3, title: "5,000,000원", part1: "2022 정기공연", part1Content: "해적, 고집쟁이 딸, 백조의 호수, 지젤, 트리플 빌", part2: "창단 60주년 기념공연", part2Content: "주얼스", part3: "공연활성화사업", part3Content: "허난설헌-수월경화, KNB Movement Series 7", part4: "공연 티켓 구매시 30%할인 일괄 적용", special: "각 공연당 R석 티켓 4매 제공", special2: "공연당 R석 티켓 2매 제공", limit: "1공연당 4매 제한" },
+
+    { id: 4, title: "10,000,000원", part1: "2022 정기공연", part1Content: "해적, 고집쟁이 딸, 백조의 호수, 지젤, 트리플 빌", part2: "창단 60주년 기념공연", part2Content: "주얼스", part3: "공연활성화사업", part3Content: "허난설헌-수월경화, KNB Movement Series 7", part4: "공연 티켓 구매시 30%할인 일괄 적용", special: "각 공연당 R석 티켓 6매 제공", special2: "공연당 R석 티켓 4매 제공", limit: "매수제한 없음" },
+
+]
 const Sub04 = () => {
     return (
         <section className='donation'>
@@ -30,66 +41,33 @@ const Sub04 = () => {
                     </p>
                 </div>
                 <div className="dokind">
-                    <div className="small">
-                        <div className="detail">
-                            <h3>2,000,000원</h3>
-                            <strong className='subtit'><span className='hf_line'>2022 정기공연</span></strong>
-                            <p>해적, 고집쟁이 딸, 백조의 호수, 지젤, 트리플 빌</p>
-                            <span className="box"> 각 공연당 S석 티켓 2매 제공</span>
-                            <strong className='subtit'><span className='hf_line'>창단 60주년 기념공연</span></strong>
-                            <p className='special'>주얼스</p>
-                            <strong className='subtit'><span className='hf_line'>공연활성화사업</span></strong>
-                            <p>허난설헌-수월경화, KNB Movement Series 7</p>
-                            <span className="box"> 각 공연당 S석 티켓 2매 제공</span>
-                            <strong className='subtit'><span className='hf_line'>공연 티켓 구매시 30%할인 일괄 적용</span></strong>
-                            <span className="box restrict"> 1공연당 2매 제한</span>
-                        </div>
-                    </div>
-                    <div className="small">
-                        <div className="detail">
-                            <h3>3,000,000원</h3>
-                            <strong className='subtit'>2022 정기공연</strong>
-                            <p>해적, 고집쟁이 딸, 백조의 호수, 지젤, 트리플 빌</p>
-                            <span className="box"> 각 공연당 S석 티켓 2매 제공</span>
-                            <strong className='subtit'>창단 60주년 기념공연</strong>
-                            <p className='special'>주얼스</p>
-                            <strong className='subtit'>공연활성화사업</strong>
-                            <p>허난설헌-수월경화, KNB Movement Series 7</p>
-                            <span className="box"> 각 공연당 S석 티켓 2매 제공</span>
-                            <strong className='subtit'>공연 티켓 구매시 30%할인 일괄 적용</strong>
-                            <span className="box restrict"> 1공연당 2매 제한</span>
-                        </div>
-                    </div>
-                    <div className="small">
-                        <div className="detail">
-                            <h3>5,000,000원</h3>
-                            <strong className='subtit'>2022 정기공연</strong>
-                            <p>해적, 고집쟁이 딸, 백조의 호수, 지젤, 트리플 빌</p>
-                            <span className="box"> 각 공연당 S석 티켓 2매 제공</span>
-                            <strong className='subtit'>창단 60주년 기념공연</strong>
-                            <p className='special'>주얼스</p>
-                            <strong className='tit'>공연활성화사업</strong>
-                            <p>허난설헌-수월경화, KNB Movement Series 7</p>
-                            <span className="box"> 각 공연당 S석 티켓 2매 제공</span>
-                            <strong className='subtit'>공연 티켓 구매시 30%할인 일괄 적용</strong>
-                            <span className="box restrict"> 1공연당 2매 제한</span>
-                        </div>
-                    </div>
-                    <div className="small">
-                        <div className="detail">
-                            <h3>10,000,000원 이상</h3>
-                            <strong className='subtit'>2022 정기공연</strong>
-                            <p>해적, 고집쟁이 딸, 백조의 호수, 지젤, 트리플 빌</p>
-                            <span className="box"> 각 공연당 S석 티켓 2매 제공</span>
-                            <strong className='tit'>창단 60주년 기념공연</strong>
-                            <p className='special'>주얼스</p>
-                            <strong className='subtit'>공연활성화사업</strong>
-                            <p>허난설헌-수월경화, KNB Movement Series 7</p>
-                            <span className="box"> 각 공연당 S석 티켓 2매 제공</span>
-                            <strong className='subtit'>공연 티켓 구매시 30%할인 일괄 적용</strong>
-                            <span className="box restrict"> 1공연당 2매 제한</span>
-                        </div>
-                    </div>
+                    {
+                        PriceContent.map(it => {
+                            return (
+                                <div className="small">
+                                    <div className='detail'>
+                                        <h3>{it.title}</h3>
+                                        <strong className='subtit'>
+                                            <span className='hf_line'>{it.part1}</span>
+                                        </strong>
+                                        <p>{it.part1Content}</p>
+                                        <span className="box">{it.special}</span>
+                                        <strong className='subtit'>
+                                            <span className='hf_line'>{it.part2}</span>
+                                        </strong>
+                                        <p className="special">{it.part2Content}</p>
+                                        <strong className='subtit'>
+                                            <span className='hf_line'>{it.part3}</span>
+                                        </strong>
+                                        <p>{it.part3Content}</p>
+                                        <span className="box">{it.special2}</span>
+                                        <strong className='subtit'>
+                                            <span className='hf_line'>{it.part4}</span></strong>
+                                        <span className="box restrict">{it.limit}</span>
+                                    </div>
+                                </div>
+                            )
+                        })}
                 </div>
             </div>
         </section>
