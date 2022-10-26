@@ -397,12 +397,6 @@
   margin: 0 0 100px 0;
 }
 
-.people .sub_represent {
-  position: absolute;
-  top: 500px;
-  right: 0;
-}
-
 .people .direct figure {
   position: relative;
   width: 400px;
@@ -428,7 +422,7 @@
 
 .people .sub_direct figure {
   position: relative;
-  width: 400px;
+  width: 300px;
   border-radius: 0 0 250px 250px;
   overflow: hidden;
   margin: 0 0 20px 0;
@@ -751,12 +745,12 @@
 
 .people .cap {
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
   text-align: center;
 }
 
 .people .cap figure {
-  width: 550px;
+  width: 500px;
   border-radius: 300px 300px;
   margin: 0 0 30px 0;
   overflow: hidden;
@@ -780,7 +774,6 @@
 .people .sub_represent {
   display: flex;
   flex-direction: column;
-  height: 832px;
 }
 
 .people .sub_represent .name {
@@ -794,7 +787,7 @@
 }
 
 .people .staff {
-  padding: 600px 0 0 0;
+  padding: 50px 0 0 0;
 }
 
 .people .staff_all {
