@@ -82,7 +82,7 @@ const Sub02 = () => {
                                 <img
                                     src={
                                         process.env.PUBLIC_URL +
-                                        '/images/staff_03.jpg'
+                                        '/images/staff_04.jpg'
                                     }
                                     alt=''
                                 />
@@ -95,7 +95,7 @@ const Sub02 = () => {
                                 <img
                                     src={
                                         process.env.PUBLIC_URL +
-                                        '/images/staff_04.jpg'
+                                        '/images/staff_05.jpg'
                                     }
                                     alt=''
                                 />
